@@ -67,7 +67,7 @@ If you have been following along, this should bring you into nano with our file 
 ## Example 4: Stop a Job with ctrl+z
 We can stop open jobs by using ctrl+z. Here's a screen shot that shows how to use this with `top`.
 
-![Controlling Top with various Commands](lh-jobs/stop-start-top.gif)
+![Controlling Top with various Commands](img/jobs-stop-start-top.gif)
 
 In the screencast, you can watch me open top, use ctrl+z to suspend it, view it in my jobs list, and then bring it back to the foreground before closing it.
 

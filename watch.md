@@ -58,7 +58,7 @@ Swap:             0           0           0
 
 We can add the `-d` option and watch will automatically highlight changes for us. Let's take a look at this using the date command. I've included a screen capture to show how the highlighting behaves.
 
-![image](watch-highlight.gif)
+![image](/img/watch-highlight.gif)
 
 ## Using Pipes with Watch
 You can combine items using pipes. This is not a feature exclusive to watch, but it enhances the functionality of this software. Pipes rely on the `|` symbol. Not coincidentally, this is called a pipe symbol or sometimes a vertical bar symbol.

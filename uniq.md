@@ -34,7 +34,7 @@ As you can see, the duplicate text was not identified. So, we know right away th
 I'll show you a way to do this later, but let me run through some examples to familiarize you with 'uniq' before mixing in other commands and potentially confusing things. 
 
 ## Download the Demo Log File Here
-I created a file to help you follow along without risking corruption of any system files or dealing with extraordinarily lengthy outputs. You can download a copy [here](link). 
+I created a file to help you follow along without risking corruption of any system files or dealing with extraordinarily lengthy outputs. You can download a copy [here](/rsrc/uniq-sample-log-file.txt). 
 
 I used a real system log but edited it for demonstration purposes. Most of the file has already been sorted into adjacent order, but I've left a couple lines "out of place" to show functionality.
 

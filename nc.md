@@ -65,7 +65,7 @@ It's that simple. That's all we need to do to open UDP port '999'.
 
 Some of you might wonder if you can use TCP and UDP with the same port number. You can, because they are separate protocols. 
 
-![Image of TCP/UDP Connections](/Videos/tcp-and-udp-same-time.gif)
+![Image of TCP/UDP Connections](/img/nc-tcp-and-udp-same-time.gif)
 
 ## Use `nc` to transfer files
 There are other methods for transferring files from one system to another. This is really intended
@@ -85,9 +85,9 @@ nc 172.20.1.168 9999 < toLinux.file
 The IP address here belongs to our Linux machine. We flip the symbol to '`<`' and the file 'toLinux.file' will be copied onto the remote machine as 'fromMac.file'.
 
 Here's an example using two different machines to send a file.
-![Image of Text File Creation on Mac](create-file.PNG)
-![Send File from Mac](send-from-mac.PNG)
-![Get File on Linux](ncat-get-file.gif)
+![Image of Text File Creation on Mac](/img/nc-create-file.PNG)
+![Send File from Mac](/img/nc-send-from-mac.PNG)
+![Get File on Linux](/img/nc-get-file.gif)
 
 ## Use `nc` for Port Scanning
 
@@ -133,7 +133,7 @@ This is a more fun way to use netcat. When you establish a TCP connection like a
 
 Here's an animation that shows me talking from one terminal to another. 
 
-![Image of Netcat Chat](ncat-chat.gif)
+![Image of Netcat Chat](/img/nc-chat.gif)
 
 Pretty cool, right?
 
@@ -167,7 +167,7 @@ This enables the attacker to access your computer remotely from the command line
 
 Here you can see a video where I have used the remote connection to open Firefox and load https://www.linuxhandbook.com.
 
-![Image of Backdoor Access](remotely-open-firefox.gif)
+![Image of Backdoor Access](/img/nc-remotely-open-firefox.gif)
 
 I'm sure you can imagine how someone without the best of intentions could abuse this power. This makes it very important to monitor port activity on any network. 
 

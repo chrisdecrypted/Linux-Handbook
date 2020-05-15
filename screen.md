@@ -90,7 +90,9 @@ We can use the session name to easily re-attach a screen.
 ```
 screen -r free
 ```
-You should now see the `free` session that we left running. If, for some reason, this didn't pull your session up, that's okay. 
+![Perform Quick Re-attach](/img/screen-01-quick-reattach.gif)
+
+You can see this in action above. If you're not getting the same results, you may have made a mistake when naming the session (or forgotten all together). This is nothing to panic about.
 
 We can use the following command to list all of our open screen sessions.
 
@@ -101,18 +103,13 @@ screen -ls
 
 Since I detached my free session again to enter this, I get the following output:
 
-```
-christopher@linuxhandbook:~$ screen -ls
-There are screens on:
-	10677.free	(12/22/2019 02:15:06 AM)	(Detached)
-	10020.top	(12/22/2019 02:06:53 AM)	(Detached)
-2 Sockets in /run/screen/S-christopher.
-```
+![Perform Screen -ls](/img/screen-02-screen-ls.gif)
+
 ### Use PID for Re-attachment
 If you didn't name your sessions, they will be identifiable by an assigned PID and a computer ID. You can use the process ID (PID) to access the desired screen just like you would for a named session. 
 
 ```
-screen -r 10677
+screen -r 685
 ```
 
 This is the PID associated with the screen I've named "free". 
@@ -124,17 +121,12 @@ Okay, if you're following along you should have the `free` session open. Let's g
 We use `[ctrl + a]+ k` to kill the active screen. A message will appear in the bottom left with a confirmation prompt. Enter `y` to exit the session. After a moment you will be left with something like this:
 
 ```
-christopher@linuxhandbook:~$ screen -r 10677
+christopher@linuxhandbook:~$ screen -r free
 [screen is terminating]
 ```
 We can confirm by running `-ls` again.
 
-```
-christopher@linuxhandbook:~$ screen -ls
-There is a screen on:
-	10020.top	(12/22/2019 02:06:53 AM)	(Detached)
-1 Socket in /run/screen/S-christopher.
-```
+![Perform Kill and Ls](/img/screen-03-kill-screen.gif)
 
 As you can see, the free screen is no longer active. 
 
@@ -166,6 +158,10 @@ In the table, you can see the option to rename windows. This is different than t
 |Switch to Next Window| [ ctrl + a ] + `[tab]`|
 
 Remember, you can use all the functions we explored earlier within the new windows also. There are a ton of possibilities to explore. 
+
+![Example of Multi-Screen View](/img/screen-04-multiple-screens.gif)
+
+Here is an example of a setup using `top`, `free`, and `df`.
 
 ## Conclusion
 There are so many ways to customize your terminal using GNU Screen. It's a really great way to improve your productivity and make your workflow a little simpler when you're doing administration tasks via the command line. Especially, if you're working on a remote machine. 
