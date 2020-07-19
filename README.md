@@ -1,3 +1,6 @@
-# Linux-Handbook
+# Linux Handbook
 
-Here are articles that have been published on https://wwww.linuxhandbook.com. Please visit the website for best experience.
+This is a collection of articles written for Linux Handbook. 
+
+You can view the fully formatted articles here.
+https://linuxhandbook.com/author/christopher/
