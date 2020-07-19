@@ -1,4 +1,4 @@
-# Linux-Handbook
+# Linux Handbook
 
 This is a collection of articles written for Linux Handbook. 
 
